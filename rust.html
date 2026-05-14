@@ -5,46 +5,50 @@
     <meta charset="UTF-8">
     <title>Rust</title>
     <meta name="author" content=".lua">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body bgcolor="#1a1a1a" text="#e0e0e0" link="#ff9900" vlink="#cc7700" alink="#ff0000">
-    <h1 align="center">RUST: Калькулятор рейду</h1>
+<body>
+    <h1>RUST: Калькулятор рейду</h1>
 
-    <table width="100%" border="0" cellpadding="15" bgcolor="#252525">
-        <tr align="center">
-            <td> <a href="index.html" style="color: #ffffff; text-decoration: none;"><b>ГОЛОВНА</b></a></td>
-            <td><a href="rust.html" style="color: #ff9900; text-decoration: none;">RUST RAID CALC</a></td>
-            <td><a href="CS2.html" style="color: #ffffff; text-decoration: none;">CS2 MECHANICS</a></td>
-            <td><a href="DOTA 2.html" style="color: #ffffff; text-decoration: none;">DOTA 2 HEROES</a></td>
+    <table class="nav-bar">
+        <tr>
+            <td> <a href="index.html">ГОЛОВНА</a></td>
+            <td><a href="rust.html" class="active-link">RUST RAID CALC</a></td>
+            <td><a href="CS2.html">CS2 MECHANICS</a></td>
+            <td><a href="DOTA 2.html">DOTA 2 HEROES</a></td>
         </tr>
     </table>
 
     <br>
 
-    <center>
-        <font color="#ff9900"><h3>Основи рейду в Rust</h3></font>
-        <p>Рейд є невід'ємною частиною ігрового процесу в Rust. Ваша головна мета — знайти базу супротивника, пробити її захист та заволодіти ресурсами, що зберігаються всередині. Використання правильної кількості вибухівки є критично важливим для успішного рейду, адже вибухівка дуже дорога у виробництві.</p>
-        <p>У таблиці нижче наведено кількість найпопулярніших видів вибухівки (C4, Ракети, Сатчелі та Розривні патрони), необхідної для знищення стін з різних матеріалів. Враховуйте, що знищення дверей або вікон часто потребує меншої кількості ресурсів, тому завжди шукайте найслабше місце у базі.</p>
-    </center>
+    <div class="text-center">
+        <h3>Основи рейду в Rust</h3>
+        <p class="max-w-800">Рейд є невід'ємною частиною ігрового процесу в Rust. Ваша головна мета — знайти базу
+            супротивника, пробити її захист та заволодіти ресурсами, що зберігаються всередині. Використання правильної
+            кількості вибухівки є критично важливим для успішного рейду, адже вибухівка дуже дорога у виробництві.</p>
+        <p class="max-w-800">У таблиці нижче наведено кількість найпопулярніших видів вибухівки (C4, Ракети, Сатчелі та
+            Розривні патрони), необхідної для знищення стін з різних матеріалів. Враховуйте, що знищення дверей або
+            вікон часто потребує меншої кількості ресурсів, тому завжди шукайте найслабше місце у базі.</p>
+    </div>
     <br>
 
     <!--                 111111111111111111111                            -->
-    <table border="1" cellspacing="1" cellpadding="10" width="100%" id="raid-table" bgcolor="#282828"
-        bordercolor="#555555">
+    <table id="raid-table">
 
         <colgroup>
-            <col bgcolor="#2b2b2b" width="10%">
-            <col span="4" align="center" width="22%">
+            <col width="10%">
+            <col span="4" width="22%">
         </colgroup>
 
         <thead>
-            <tr bgcolor="#444444" style="color: white;">
+            <tr>
                 <th rowspan="2">Explosive / Target</th>
                 <th colspan="4">Wall Material (HP)</th>
 
 
             </tr>
-            <tr bgcolor="#333333" style="color: #ccc;">
+            <tr>
                 <th>Wood (250hp)</th>
                 <th>Stone (500hp)</th>
                 <th>Metal (1000hp)</th>
@@ -52,13 +56,13 @@
             </tr>
         </thead>
 
-        <tbody align="center">
+        <tbody>
 
             <tr>
 
-                <td><a href="https://ru-wiki.rustclash.com/img/items180/explosive.timed.png" target="_blank"><img
-                            src="https://ru-wiki.rustclash.com/img/items180/explosive.timed.png" width="45"
-                            alt="C4"></a></td>
+                <td><a href="https://rustlabs.com/item/timed-explosive-charge"
+                        target="_blank"><img src="https://files.facepunch.com/rust/item/explosive.timed_512.png"
+                            width="45" alt="C4"></a></td>
                 <td>1</td>
                 <td>2</td>
                 <td>4</td>
@@ -66,8 +70,8 @@
 
 
             <tr>
-                <td><a href="https://ru-wiki.rustclash.com/img/items180/ammo.rocket.basic.png" target="blank"><img
-                            src="https://ru-wiki.rustclash.com/img/items180/ammo.rocket.basic.png" width="40"
+                <td><a href="https://rustlabs.com/item/rocket" target="_blank"><img
+                            src="https://files.facepunch.com/rust/item/ammo.rocket.basic_512.png" width="40"
                             alt="Rocket"></a></td>
                 <td>2</td>
                 <td>4</td>
@@ -81,7 +85,7 @@
                             src="https://images.steamusercontent.com/ugc/1259268007359176775/B0F296BF7F997440CC26342F38789BE60FED93ED/"
                             width="40" alt="Satchel"></a></td>
                 <td>3</td>
-                <td>10</td>
+                <td rowspan="2">10</td>
                 <td>23</td>
                 <td>46</td>
             </tr>
@@ -91,7 +95,7 @@
                             src="https://rustgame.ru/upload/img/4226_ammo.rifle_.explosive.png" width="40"
                             alt="Ammo"></a></td>
                 <td>49</td>
-                <td>185</td>
+
                 <td>400</td>
                 <td>799</td>
             </tr>
@@ -103,28 +107,33 @@
 
     <br>
 
-    <center>
-        <font color="#ff9900"><h3>Економіка ресурсів: Вартість крафту</h3></font>
-        <p>Окрім знання того, скільки вибухівки потрібно, вам також важливо розуміти, наскільки дорого її виготовити. Сірка (Sulfur) — це головний ресурс для створення пороху, який, у свою чергу, є основою для всієї вибухівки в грі. Ефективне добування та переплавка сірки є ключем до домінування на сервері.</p>
-        <p>Наступна таблиця демонструє загальну вартість виготовлення однієї одиниці відповідної вибухівки у сірці. Знаючи ці цифри, ви зможете розрахувати, скільки ресурсів вам знадобиться для підготовки до масштабного рейду.</p>
-        
-        <p><b><a href="rust-calc.html" style="color: #ff9900;">[ ВІДКРИТИ КАЛЬКУЛЯТОР КРАФТУ ]</a></b></p>
-    </center>
+    <div class="text-center">
+        <h3>Економіка ресурсів: Вартість крафту</h3>
+        <p class="max-w-800">Окрім знання того, скільки вибухівки потрібно, вам також важливо розуміти, наскільки дорого
+            її виготовити. Сірка (Sulfur) — це головний ресурс для створення пороху, який, у свою чергу, є основою для
+            всієї вибухівки в грі. Ефективне добування та переплавка сірки є ключем до домінування на сервері.</p>
+        <p class="max-w-800">Наступна таблиця демонструє загальну вартість виготовлення однієї одиниці відповідної
+            вибухівки у сірці. Знаючи ці цифри, ви зможете розрахувати, скільки ресурсів вам знадобиться для підготовки
+            до масштабного рейду.</p>
+
+        <p><b><a href="rust-calc.html" class="active-link">[ ВІДКРИТИ КАЛЬКУЛЯТОР КРАФТУ ]</a></b></p>
+    </div>
+
     <br>
 
-    <table border="1" cellspacing="1" cellpadding="10" width="75%" bgcolor="#282828" bordercolor="#555555">
+    <table>
         <thead>
-            <tr bgcolor="#444444" style="color: white;">
+            <tr>
                 <th>Item</th>
                 <th>Name</th>
                 <th>Sulfur</th>
 
             </tr>
         </thead>
-        <tbody align="center">
+        <tbody>
 
             <tr>
-                <td><img src="https://ru-wiki.rustclash.com/img/items180/explosive.timed.png" width="45" alt="C4"></td>
+                <td><img src="https://files.facepunch.com/rust/item/explosive.timed_512.png" width="45" alt="C4"></td>
                 <td><a href="https://rustlabs.com/item/timed-explosive-charge" target="_blank">Timed C4</a></td>
                 <td>2200</td>
 
@@ -132,7 +141,7 @@
 
 
             <tr>
-                <td><img src="https://ru-wiki.rustclash.com/img/items180/ammo.rocket.basic.png" width="45" alt="Rocket">
+                <td><img src="https://files.facepunch.com/rust/item/ammo.rocket.basic_512.png" width="45" alt="Rocket">
                 </td>
                 <td><a href="https://rustlabs.com/item/rocket" target="_blank">Rocket</a></td>
                 <td>1400</td>
@@ -160,14 +169,9 @@
 
     <br><br>
     <br><br>
-    <!--   
-    <p><b>50%:</b><br>
-    <img src="https://ru-wiki.rustclash.com/img/items180/explosive.timed.png" width="50" height="50" ></p>
-    
-    <p><b>200%:</b><br>
-    <img src="https://ru-wiki.rustclash.com/img/items180/explosive.timed.png" width="200" height="200" ></p>
-    -->
-    <a href="#top">Повернутися нагору</a>
+    <div class="text-center">
+        <a href="#top">Повернутися нагору</a>
+    </div>
 </body>
 
 </html>
