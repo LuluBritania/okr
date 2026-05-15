@@ -6,7 +6,9 @@ body {
     margin: 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: #ff9900;
     text-align: center;
 }
@@ -28,7 +30,8 @@ table {
     margin: 20px auto;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #444444;
     padding: 10px;
     text-align: center;
@@ -59,7 +62,9 @@ th {
     background-color: #2b2b2b;
 }
 
-ul, ol, dl {
+ul,
+ol,
+dl {
     margin: 20px auto;
     padding: 15px;
     max-width: 800px;
@@ -82,23 +87,24 @@ dl dt {
     margin: 0 auto;
 }
 
-/* --- Лабораторна робота 4 --- */
+/* --- lab4 --- */
 
-/* 1. Контекстний селектор (Descendant) */
+
 .nav-bar tr td a {
     text-transform: uppercase;
     letter-spacing: 1px;
+    color: #ff9900;
 }
 
-/* 2. Сусідній селектор (Adjacent Sibling) */
-h2 + p {
+
+
+h2+p {
     font-size: 1.05em;
     margin-top: 8px;
     color: #cccccc;
 }
 
-/* 3. Дочірній селектор (Child) */
-ul > li {
+ul>li {
     list-style-type: square;
     margin-bottom: 5px;
     padding-left: 5px;
