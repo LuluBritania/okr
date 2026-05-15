@@ -81,3 +81,25 @@ dl dt {
     max-width: 800px;
     margin: 0 auto;
 }
+
+/* --- Лабораторна робота 4 --- */
+
+/* 1. Контекстний селектор (Descendant) */
+.nav-bar tr td a {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* 2. Сусідній селектор (Adjacent Sibling) */
+h2 + p {
+    font-size: 1.05em;
+    margin-top: 8px;
+    color: #cccccc;
+}
+
+/* 3. Дочірній селектор (Child) */
+ul > li {
+    list-style-type: square;
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
